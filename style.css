@@ -256,12 +256,6 @@ nav.scrolled {
   margin-top: 12px;
 }
 
-.signup-info p {
-  font-size: 14px;
-  color: #f2e8d98c;
-  margin-bottom: 28px;
-}
-
 .signup-info ul {
   list-style: none;
   display: flex;
