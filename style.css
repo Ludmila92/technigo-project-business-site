@@ -456,3 +456,32 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 640px) {
+  .hero-video-desktop {
+    display: none;
+  }
+
+  .hero-img-mobile {
+    display: block;
+  }
+
+  .hero-content h1 {
+    font-size: 48px;
+    letter-spacing: -0.02em;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .signup-form-wrap form {
+    padding: 28px 20px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
