@@ -503,9 +503,15 @@ footer {
     text-align: center;
   }
 
-  .header {
-    padding: 28px 20px;
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    text-emphasis: none;
+    padding: 50px 90px;
   }
 }
