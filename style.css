@@ -504,10 +504,16 @@ footer {
     text-align: center;
   }
 
-  .nav {
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  nav {
+    padding: 20px 5%;
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+
+  .nav-btn {
+    font-size: 12px;
+    padding: 6px 12px;
   }
 }
