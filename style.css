@@ -373,6 +373,16 @@ select options {
   cursor: pointer;
 }
 
+#grind {
+  color: #f2e8d9;
+  background-color: #181310;
+  border: solid 1px #c8883a38;
+}
+
+#grind:hover {
+  border-color: #c8883a;
+}
+
 /* Terms row */
 .terms label {
   font-size: 13px;
@@ -438,7 +448,7 @@ footer {
     border-bottom: solid 1px #c8883a;
   }
 
-  .statt:last-child {
+  .stat:last-child {
     border-bottom: none;
   }
 
