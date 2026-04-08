@@ -502,4 +502,10 @@ footer {
     align-items: center;
     text-align: center;
   }
+
+  .header {
+    padding: 28px 20px;
+    align-items: center;
+    text-emphasis: none;
+  }
 }
