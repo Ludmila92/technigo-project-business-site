@@ -256,11 +256,24 @@ nav.scrolled {
   margin-top: 12px;
 }
 
+.signup-info p {
+  font-size: 14px;
+  color: #f2e8d98c;
+  margin-bottom: 28px;
+}
+
 .signup-info ul {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.signup-info .eyebrows {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #e6a855;
+  margin-bottom: 14px;
 }
 
 .signup-info li {
