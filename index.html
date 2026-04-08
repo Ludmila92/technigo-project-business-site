@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Altitude Roasters — Single Origin Coffee</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <script>
+    const nav = document.querySelector("nav");
+    window.addEventListener("scroll", () => {
+      nav.classList.toggle("scrolled", window.scrollY > 50);
+    });
+  </script>
+
+  <body>
+    <!-- HEADER -->
+    <header class="site-header">
+      <nav>
+        <span class="logo">Altitude Roasters</span>
+        <button class="nav-btn">Join the Club</button>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <img
+        class="hero-img"
+        src="/code/img/pexels-photo-302899 1.jpg"
+        alt="coffee cup"
+      />
+      <div class="hero-content">
+        <span class="eyebrows">Single Origin · Small Batch · Stockholm</span>
+        <h1>
+          Coffee from <br /><em>impossible</em><br />
+          altitudes.
+        </h1>
+        <p>
+          We source rare beans from 2,000m+ farms and roast to order every
+          Tuesday. No blends. No compromise.
+        </p>
+        <button class="hero-btn">Start Your Subscription</button>
+      </div>
+    </section>
+
+    <!-- STATISTICS -->
+    <section class="stats">
+      <div class="stat">
+        <strong>14</strong>
+        <span>origins</span>
+        <p>Farms hand-picked across Ethiopia, Colombia, and Yemen.</p>
+      </div>
+      <div class="stat">
+        <strong>48h</strong>
+        <span>Roast-to-Door</span>
+        <p>Every bag ships within 48 hours of leaving the drum.</p>
+      </div>
+      <div class="stat">
+        <strong>0</strong>
+        <span>Middlemen</span>
+        <p>We pay farmers directly - minimum 40% above fair trade.</p>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="products">
+      <p class="eyebrows">Current Offerings</p>
+      <h2>This Season's Harvests</h2>
+
+      <div class="product-grid">
+        <div class="product-card">
+          <span class="region">Ethiopia · Yirgacheffe</span>
+          <h3>Konga Natural</h3>
+          <p>Jasmine · Blueberry · Dark Chocolate · Silky Body</p>
+          <span class="price">250g · 195 kr</span>
+        </div>
+        <div class="product-card">
+          <span class="region">Colombia · Huila</span>
+          <h3>El Paraíso Washed</h3>
+          <p>Red Apple · Caramel · Almond · Clean Finish</p>
+          <span class="price">250g · 185 kr</span>
+        </div>
+        <div class="product-card">
+          <span class="region">Yemen · Haraaz</span>
+          <h3>Ancient Terroir</h3>
+          <p>Dried Fig · Tobacco · Cardamom · Wine-like</p>
+          <span class="price">250g · 225 kr</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIGNUP FORM -->
+    <section class="signup-section" id="signup">
+      <div class="signup-info">
+        <p class="eyebrows">The Altitude Club</p>
+        <h2>Rare coffee. Every month. Curated for you.</h2>
+        <p>
+          Join over 3,200 members across Scandinavia who receive two seasonal
+          single-origin bags each month.
+        </p>
+        <ul>
+          <li>Two 250g bags of rotating single-origin coffee</li>
+          <li>Tasting notes and farm story with each delivery</li>
+          <li>Early access to micro-lot releases</li>
+          <li>Pause or cancel any time - no lock-in</li>
+        </ul>
+      </div>
+
+      <div class="signup-form-wrap">
+        <form action="https://httpbin.org/anything" method="post">
+          <h3>Create Your Account</h3>
+          <p>Takes less than 2 minutes. Free to join.</p>
+
+          <!-- Name -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                placeholder="Ingrid"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input
+                type="text"
+                id="last-name"
+                name="Last-name"
+                placeholder="Andersson"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email-address">Email Address</label>
+              <input
+                type="email"
+                id="email-address"
+                name="email-address"
+                placeholder="ingrid@example.com"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="Password">Password</label>
+              <input
+                type="password"
+                id="Password"
+                name="Password"
+                placeholder="Min. 8 characters"
+                minlength="8"
+              />
+            </div>
+          </div>
+
+          <!-- Radio-buttons -->
+          <div class="form-group">
+            <label>Brewing Method</label>
+            <div class="radio-group">
+              <label
+                ><input type="radio" name="brew_method" value="v60" />
+                V60</label
+              ><label
+                ><input type="radio" name="brew_method" value="espresso" />
+                Espresso</label
+              ><label
+                ><input type="radio" name="brew_method" value="french_press" />
+                French Press</label
+              ><label
+                ><input type="radio" name="brew_method" value="aeropress" />
+                Aeropress</label
+              >
+            </div>
+          </div>
+
+          <!-- Select -->
+          <div class="form-group">
+            <label for="grind">Grind Preference</label>
+            <select name="gring" id="grind">
+              <option value="">- Select Grind -</option>
+              <option value="whole_bean">Whole Bean</option>
+              <option value="Coarse">Coarse</option>
+              <option value="Medium">Medium</option>
+              <option value="Fine">Fine</option>
+            </select>
+          </div>
+
+          <!-- checkboxes -->
+          <div class="form-group">
+            <label>Flavour Preferences</label>
+            <label
+              ><input type="checkbox" name="flavour" value="fruity" />
+              Fruity</label
+            >
+            <label
+              ><input type="checkbox" name="flavour" value="chocolate" />
+              Chocolate</label
+            >
+            <label
+              ><input type="checkbox" name="flavour" value="nutty" />
+              Nutty</label
+            >
+            <label
+              ><input type="checkbox" name="flavour" value="floral" />
+              Floral</label
+            >
+            <label
+              ><input type="checkbox" name="flavour" value="spiced" />
+              Spiced</label
+            >
+          </div>
+
+          <div class="form-group terms">
+            <label>
+              <input
+                type="checkbox"
+                name="terms_accepted"
+                value="yes"
+                required
+              />
+              I agree to the <a href="#">Terms of Service</a> and
+              <a href="#">Privacy Policy</a>.
+            </label>
+          </div>
+
+          <button type="submit">Join Altitude Club</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <span class="logo">Altitude Roasters</span>
+      <span
+        >© 2026 Altitude Roasters AB · Stockholm ·
+        hello@altituderoasters.se</span
+      >
+    </footer>
+  </body>
+</html>
