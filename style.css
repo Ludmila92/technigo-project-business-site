@@ -402,6 +402,13 @@ select options {
   border-color: #c8883a;
 }
 
+select {
+  -webkit-appearance: none;
+  appereance: none;
+  border-radius: 0;
+  padding-right: 40px;
+}
+
 /* Terms row */
 .terms label {
   font-size: 13px;
@@ -411,7 +418,13 @@ select options {
   display: flex;
   align-items: flex-start;
   gap: 10px;
+  flex-wrap: nowrap;
   cursor: pointer;
+}
+
+.term input[type="checkbox"] {
+  flex-shrink: 0;
+  margin-top: 3px;
 }
 
 .terms a {
