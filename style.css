@@ -25,10 +25,11 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 50px 90px;
+  transition: background-color 0.3s ease;
 }
 
 nav.scrolled {
-  background-color: #0e0b09;
+  background-color: rgba(14, 11, 9, 0.95);
 }
 
 .logo {
